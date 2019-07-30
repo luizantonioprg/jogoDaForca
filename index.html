@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Jogo da Forca</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+      <div id="container">
+            <div id="forca">
+              <span>|<sup>---------</sup>|</span>
+              <p>|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="cabeca">O</span></p>
+              <p>|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="tronco">T</span></p>
+              <p>|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="pernas">^</span></p>
+
+              <h1 id="erros"></h1>
+             </div>
+       </div>
+
+       <div id="second" class="second">
+          <input type="text" id="tentar"><br>
+          <button type="button" id="btn2">TENTAR</button>
+          <button type="button" id="btn3" onclick="recomecar()">RECOMEÇAR</button>
+       </div>
+
+       <div id="inicio" class="inicio">
+          <h3>PARA COMEÇAR A JOGAR,DIGITE NO CAMPO ABAIXO A PALAVRA QUE SERÁ ADIVINHADA.</h3>
+          <input type="text" id="input" placeholder="digite sem acentos"><br>
+          <button onclick="myFunction()">COMEÇAR!</button>
+       </div>
+
+       <div id="main" class="main"></div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
